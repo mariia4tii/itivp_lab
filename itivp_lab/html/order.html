@@ -38,13 +38,20 @@
             <img src="../icons/flame-in-circle.svg" />
           </div>
           <div id="input-fields">
-            <label for="name">имя:</label>
-            <input id="name" type="text" />
-            <label for="number">номер телефона:</label>
-            <input id="number" type="text" />
-            <label for="address">адрес доставки:</label>
-            <input id="address" type="text" />
+            <div class="input-group">
+              <label for="name">имя:</label>
+              <input id="name" type="text" />
+            </div>
+            <div class="input-group">
+              <label for="number">номер телефона:</label>
+              <input id="number" type="text" />
+            </div>
+            <div class="input-group">
+              <label for="address">адрес доставки:</label>
+              <input id="address" type="text" />
+            </div>
           </div>
+          
           <div id="payment">
             <span>Оплата</span>
             <label>
@@ -91,6 +98,7 @@
     </div>
         <input class="submit-button" type="submit" value="Оформить заказ">
       </section>
+      <script src="../js/form_validation.js"></script>
     </main>
     <footer>
       <div class="frame-footer">
@@ -115,6 +123,8 @@
       </div>
     </footer>
     <script src="../js/open_burger.js"></script>
+    <script src="../js/validation.js"></script> 
+
   </body>
   <img id="flame" src="../img/flame.png" />
 </html>
