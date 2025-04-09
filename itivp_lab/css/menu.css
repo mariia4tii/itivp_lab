@@ -1,0 +1,1292 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+background-color: #FFFCF6;
+}
+#cock-container {
+    border-bottom: 1px;
+}
+.invisible-link{
+    color: transparent;
+    text-decoration: none;
+}
+
+#search {
+    padding: 2rem 1.25rem 2rem 1.25rem;
+}
+
+#search-field {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    position: relative; 
+}
+
+#search-field button {
+    justify-self: end;
+}
+
+#search-input {
+    color: #222;
+    font-family: Roboto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 0; 
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.clear-icon {
+    position: absolute;
+    right: 10%; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px; 
+    color: #888;
+    display: none; 
+    pointer-events: auto;
+}
+
+#search-input:focus + .clear-icon,
+#search-input:not(:placeholder-shown) + .clear-icon {
+    display: block; 
+}
+
+#search-input:focus {
+    color: black;
+    border-color:#EB6B32;
+    border-radius: 0; 
+    cursor: pointer;
+    outline: none; 
+}
+
+@media (min-width: 1200px){
+    
+html{
+    font-size: 0.926vw; /*17,77px*/
+    position: relative;
+}
+
+body {  
+    padding-top: 8rem; 
+    font-family: Roboto;
+    font-style: normal;
+    height: auto;
+    margin: 0;
+    margin-left: 1.7857rem;
+    margin-right: 1.7857rem;
+    border-bottom: 1px solid #0E0A00;
+    border-left: 1px solid #0E0A00;
+    border-right: 1px solid #0E0A00;
+}
+
+.menu_toggle, #menu_toggle , .logo-nav1, .order-burger{
+    display: none; 
+}
+
+nav {
+    position: fixed; 
+    top: 0; 
+    left: 1.85rem; 
+    right: 1.85rem;
+    z-index: 1000; 
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    align-items: center; 
+    padding: 2.5rem 0rem 2.07rem 0rem; 
+    border-top:  1px solid #0E0A00;
+    border-bottom: 1px solid #0E0A00;
+    text-transform: uppercase;
+    letter-spacing: 0.0357rem;
+}
+
+.logo-nav2 {
+    margin-right: 8.57rem; 
+    margin-left: 2.714rem;
+    width: 3.07rem;
+    height: 3.07rem;
+}
+nav ul span {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 50%; 
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #FFFCF6;
+}
+
+.column-content {
+    display: flex;
+    width: 100%;
+    
+    
+}
+
+.column {
+    width: 50%;
+    
+}
+
+.column-left {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  1.428rem; 
+}
+
+/* Текст */
+.text1 {
+    color: #222;
+    text-align: center;
+    font-size: 3.375rem;
+    white-space: pre-line;
+    font-family: Roboto, sans-serif;
+    margin: 0; 
+}
+.column-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  1.428rem; 
+}
+
+.image-container {
+    border-left: 0.0625rem  solid #0E0A00;  
+    
+}
+.img1{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.textic{
+    word-spacing: 3rem;
+    font-size:1.5rem;
+    white-space: pre-line;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    /* margin-top: -1rem ; */
+    margin-left:1.25rem; 
+}
+
+.blocks-container {
+    display: flex; /* Располагаем блоки в ряд */
+    gap: 1.25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+.block{
+    border: 0.0625rem solid #0E0A00; 
+    width: 100%;
+    height: auto;
+    flex: 0 1 calc(33.33% - 1.25rem);
+    
+}
+
+.textmain{
+    margin-top: 2.97rem;
+}
+.textpost{
+    margin-top: 0.5rem;
+    color: #222;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    margin-left:1.25rem; 
+    letter-spacing: 0.03125rem;
+    text-transform: uppercase;
+}
+
+.imageblock{
+    display: flex;
+    margin-top: 0rem; /* Отступ сверху */
+    justify-content: center;
+   
+}
+.imgpizza{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+.price-and-button-container {
+    display: inline-flex;
+  align-items: center; 
+  padding-bottom: 1.25rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  padding-top:2.88rem;
+  gap: 19rem;
+  width: 7.5rem;
+    height: 3rem;
+  
+   
+  }
+  
+  .textprice {
+    margin-left:1.25rem;
+    word-spacing: -0.02rem; 
+    font-size:1.5rem;
+    white-space: pre-line;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    
+  }
+  
+  .buttonblock {
+    width: 7.5rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    border: 0.0625rem solid #0E0A00;
+    background: none;
+    display: flex; /* Нужно, чтобы кнопка тоже была флекс-элементом */
+  }
+  
+  .buttontext {
+    color: #222;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .buttonblock:hover {
+    background-color: #EB6B32; /* Заливка при наведении */
+    border-color: #EB6B32; /* Меняем цвет рамки, чтобы соответствовал фону */
+}
+
+.buttonblock:hover .buttontext {
+    color: #FFFCF6; 
+    background: none;
+}
+
+
+footer{
+    position: relative;
+    margin: 3.64rem  1.42rem 2.14rem  1.42rem;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.bottom-line {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    margin: 1.42rem 7.5rem 0 7.5rem;
+    gap: 35rem;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.bottom-line ul {
+    display: contents; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.bottom-line li {
+    text-align: center; 
+    background-color: transparent;
+}
+
+.bottom-line li:first-child {
+    margin-left: 1rem; 
+}
+
+.bottom-line li:last-child {
+    margin-right: 1rem; 
+}
+
+.bottom-line li a{
+    text-align: center; 
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+.bottom-line li a:hover { 
+    color: gray ; 
+    text-decoration: underline;
+}
+
+.bottom-line a:visited {
+    color: inherit;
+}
+
+.frame-footer {
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    background-color: transparent;
+}
+#frame-in-footer {
+    width: 100%;
+    background-color: transparent;
+}
+
+#logo-footer {
+    width: 46rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: transparent;
+}
+
+#circle1,#circle2{
+    width: 6.7rem;
+    position: absolute;
+    top:6.4%;
+    z-index: 2;
+    background-color: transparent;
+}
+
+#circle3, #circle4{
+    width: 6.7rem;
+    position: absolute;
+    bottom: 6.4%;
+    z-index: 2;
+    background-color: transparent;
+}
+
+#circle1,#circle4{
+    left:3.82%;
+}
+
+#circle2, #circle3{
+    right:3.3%;
+}
+
+#flame{
+    width: 100%;
+    position:absolute;
+    bottom: 0%;
+    left:0%;
+    z-index: 1;
+    background-color: transparent;
+}
+}
+
+@media (min-width: 1000px) and (max-width: 1200px){
+
+    html{
+        font-size: 0.926vw; /*17,77px*/
+        position: relative;
+    }
+    
+    body {  
+        padding-top: 8rem; 
+        font-family: Roboto;
+        font-style: normal;
+        height: auto;
+        margin: 0;
+        margin-left: 1.7857rem;
+        margin-right: 1.7857rem;
+        border-bottom: 1px solid #0E0A00;
+        border-left: 1px solid #0E0A00;
+        border-right: 1px solid #0E0A00;
+    }
+    
+    .menu_toggle, #menu_toggle , .logo-nav1, .order-burger{
+        display: none; 
+    }
+    
+    nav {
+        position: fixed; 
+        top: 0; 
+        left: 1.85rem; 
+        right: 1.85rem;
+        z-index: 1000; 
+        display: grid;
+        grid-template-columns: auto 1fr auto; 
+        align-items: center; 
+        padding: 2.5rem 0rem 2.07rem 0rem; 
+        border-top:  1px solid #0E0A00;
+        border-bottom: 1px solid #0E0A00;
+        text-transform: uppercase;
+        letter-spacing: 0.0357rem;
+        font-size: 1.5rem;
+    }
+    
+    nav ul span {
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 50%; 
+        padding: 10px;
+    }
+
+    .logo-nav2 {
+        margin-right: 8.57rem; 
+        margin-left: 2.714rem;
+        width: 3.07rem;
+        height: 3.07rem;
+    }
+    
+    nav ul  {
+        display: flex; 
+        list-style: none;
+        margin: 0; 
+    }
+    
+    
+    nav li {
+        margin-right: 3.43rem; 
+    }
+    
+    nav li:last-child {
+        margin-right: 0; 
+    }
+    
+    
+    
+    nav ul a {
+        padding: 10px;
+        color: #222;
+        text-decoration: none;
+        border: 1px solid transparent;
+        border-radius: 50%; 
+    }
+    
+    nav ul a:hover {
+        border: 1px solid #222;
+        border-radius: 50%; 
+    
+    }
+    
+    nav>a {
+        display: flex; 
+        align-items: center;
+        justify-content: center;  
+        height: 3.43rem;
+        width: 12rem;;   
+        margin-right: 5.14rem;
+        background-color: #EB6B32;
+        color: #FFFDFA;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    nav>a:hover {
+        background-color: #e64a19; 
+    }
+    
+    header {
+        display: flex;
+        width: 100%;
+        background-color: #FFFCF6;
+    }
+    
+    .column-content {
+        display: flex;
+        width: 100%;
+        align-items: center; 
+        
+    }
+    
+    .column {
+        width: 50%;
+        
+    }
+    
+    .column-left {
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:  1.428rem; 
+    }
+    
+    /* Текст */
+    .text1 {
+        color: #222;
+        text-align: center;
+        font-size: 3.375rem;
+        white-space: pre-line;
+        font-family: Roboto, sans-serif;
+        margin: 0; 
+    }
+    .column-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:  1.428rem; 
+    }
+    
+    .image-container {
+        border-left: 0.0625rem  solid #0E0A00;  
+        
+    }
+    .img1{
+        width: 100%;
+        height: auto;
+        display: block; 
+    }
+
+    .textic{
+        word-spacing: 3rem;
+        font-size:1.5rem;
+        white-space: pre-line;
+        font-family: Roboto, sans-serif;
+        text-transform: uppercase;
+        /* margin-top: -1rem ; */
+        margin-left:1.25rem; 
+    }
+
+    #search-field{
+        display: grid;
+        grid-template-columns: 10fr 1fr;
+    }
+    
+    .blocks-container {
+        display: flex; /* Располагаем блоки в ряд */
+        gap: 1.25rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem; 
+        margin-bottom: 1.25rem;
+        flex-wrap: wrap;
+      }
+    
+    .block{
+        border: 0.0625rem solid #0E0A00; 
+        flex: 0 1 calc(50% - 1.25rem);
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .textmain{
+        margin-top: 3.4rem;
+    }
+    .textpost{
+        margin-top: 0.5rem;
+        color: #222;
+        font-family: Roboto;
+        font-size: 1.2rem;
+        font-style: normal;
+        margin-left:1.25rem; 
+        letter-spacing: 0.03125rem;
+        text-transform: uppercase;
+    }
+    
+    .imageblock{
+        display: flex;
+        margin-top: 0rem; /* Отступ сверху */
+        justify-content: center;
+       
+    }
+    .imgpizza{
+        width: 100%;
+        height: auto;
+        display: block; 
+    }
+    .price-and-button-container {
+        display: inline-flex;
+      align-items: center; 
+      gap: 32rem;
+      padding-bottom: 1.25rem;
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+      padding-top:2.88rem;
+      width: 8rem;
+        height: 3.5rem;
+      
+      }
+      
+      .textprice {
+        margin-left:1.25rem;
+        word-spacing: -0.02rem; 
+        font-size:2rem;
+        white-space: pre-line;
+        font-family: Roboto, sans-serif;
+        text-transform: uppercase;
+        
+      }
+      
+      .buttonblock {
+        width: 8rem;
+        height: 3.5rem;
+        padding: 0.5rem 1rem;
+        justify-content: center;
+        align-items: center;
+        border: 0.0625rem solid #0E0A00;
+        background: none;
+        display: flex; /* Нужно, чтобы кнопка тоже была флекс-элементом */
+      }
+      
+      .buttontext {
+        color: #222;
+        font-family: Roboto;
+        font-size: 1.2rem;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      
+      .buttonblock:hover {
+        background-color: #EB6B32; /* Заливка при наведении */
+        border-color: #EB6B32; /* Меняем цвет рамки, чтобы соответствовал фону */
+    }
+    
+    .buttonblock:hover .buttontext {
+        color: #FFFCF6; 
+        background: none;
+    }
+    
+    
+    footer{
+        position: relative;
+        margin: 3.64rem  1.42rem 2.14rem  1.42rem;
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+    .bottom-line {
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        margin: 1.42rem 7.5rem 0 7.5rem;
+        gap: 15rem;
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+    .bottom-line ul {
+        display: contents; 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+    }
+    
+    .bottom-line li {
+        text-align: center; 
+        background-color: transparent;
+        font-size: 3rem;
+    }
+    
+    .bottom-line li:first-child {
+        margin-left: 1rem; 
+    }
+    
+    .bottom-line li:last-child {
+        margin-right: 1rem; 
+    }
+    
+    .bottom-line li a{
+        text-align: center; 
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+    }
+    
+    .bottom-line li a:hover { 
+        color: gray ; 
+        text-decoration: underline;
+    }
+    
+    .bottom-line a:visited {
+        color: inherit;
+    }
+    
+    .frame-footer {
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        position: relative;
+        background-color: transparent;
+    }
+    #frame-in-footer {
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    #logo-footer {
+        width: 46rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+    #circle1,#circle2{
+        width: 6.7rem;
+        position: absolute;
+        top:6.4%;
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+    #circle3, #circle4{
+        width: 6.7rem;
+        position: absolute;
+        bottom: 6.4%;
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+    #circle1,#circle4{
+        left:3.82%;
+    }
+    
+    #circle2, #circle3{
+        right:3.3%;
+    }
+    
+    #flame{
+        width: 100%;
+        position:absolute;
+        bottom: 0%;
+        left:0%;
+        z-index: 1;
+        background-color: transparent;
+    }
+
+}
+
+@media only screen and (max-width: 780px) {
+
+    html{
+        font-size: 0.926vw; /*17,77px*/
+        position: relative;
+    }
+        
+    .desctop-order {
+        display: none;
+    }
+
+    body {  
+        padding-top: 18rem; 
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0;
+        margin-left: 1.7857rem;
+        margin-right: 1.7857rem;
+        border-bottom: 1px solid #0E0A00;
+        border-left: 1px solid #0E0A00;
+        border-right: 1px solid #0E0A00;
+    }
+
+    nav {
+        position: fixed; 
+        top: 0; 
+        left: 2rem; 
+        right: 2rem;
+        z-index: 1000; 
+        display: grid;
+        grid-template-columns: auto auto ; 
+        align-items: center; 
+        padding: 6rem 0rem 5rem 0rem; 
+        border-top: 1px solid #0E0A00; 
+        border-bottom: 1px solid #0E0A00; 
+        text-transform: uppercase;
+        letter-spacing: 0.0357rem;
+        font-size: 4rem;
+    }
+
+    .logo-nav1 {
+        margin-left: 5rem;
+        margin-right: 3rem; 
+        width: 16rem;
+    }
+    .logo-nav2 {
+        width: 7rem;
+    }
+
+
+
+    nav ul a {
+        padding: 1rem;
+        color: #222;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    nav ul a:hover {
+        text-decoration: underline;
+    }
+
+    nav>a {
+        display: flex; 
+        align-items: center;
+        justify-content: center;  
+        height: 3.43rem;
+        width: 8.57rem;;   
+        margin-right: 5.14rem;
+        background-color: #EB6B32;
+        color: #FFFDFA;
+        text-decoration: none;
+        text-align: center;}
+
+    nav>a:hover {
+        background-color: #e64a19; 
+    }
+    
+    header {
+        display: flex;
+        width: 100%;
+        background-color: #FFFCF6;
+    }
+    
+    .column-content {
+        
+        width: 100%;        
+    }
+    
+    /* .column {
+        width: 100%;
+        
+    } */
+    
+    .column-left {
+    
+        width: 100%;
+        
+    }
+    
+    /* Текст */
+    .text1 {
+        color: #222;
+        text-align: center;
+        font-size: 5rem;
+        white-space: pre-line;
+        font-family: Roboto, sans-serif;
+        padding: 5rem;
+    }
+    
+    .image-container {
+        border-top: 0.0625rem  solid #0E0A00;  
+        padding: 3rem;
+        width: 94%;
+    }
+    .image-container img{
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    #search{
+        padding: 4rem 3rem 4rem 3rem;
+    }
+    
+    #search-field{
+        grid-template-columns: 2fr 1fr;
+    }
+        
+    #search-input{
+        font-size: 4rem;
+        border: 0.5px solid black;
+        border-radius: 0px;
+    }
+
+    .clear-icon {
+        position: absolute;
+        right: 37%; 
+        top: 50%;
+    }
+    
+    .textic{
+        word-spacing: 3rem;
+        font-size:4rem;
+        white-space: pre-line;
+        font-family: Roboto, sans-serif;
+        text-transform: uppercase;
+        /* margin-top: -1rem ; */
+        margin-left:1.25rem; 
+    }
+    
+    .blocks-container {
+        display: flex; /* Располагаем блоки в ряд */
+        gap: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem; 
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+      }
+    
+    .block{
+        border: 0.0625rem solid #0E0A00; 
+        flex: 0 1 calc(100% - 1.25rem);
+        width: 100%;
+    }
+    
+    .textmain{
+        margin-top: 5rem;
+    }
+    .textpost{
+        margin-top: 0.5rem;
+        color: #222;
+        font-family: Roboto;
+        font-size: 2.5rem;
+        font-style: normal;
+        margin-left:1.25rem; 
+        letter-spacing: 0.03125rem;
+        text-transform: uppercase;
+    }
+    
+    .imageblock{
+        display: flex;
+        margin-top: 0rem; /* Отступ сверху */
+        justify-content: center;
+       
+    }
+    .imgpizza{
+        width: 100%;
+        height: auto;
+        display: block; 
+    }
+    .price-and-button-container {
+        display: inline-flex;
+      align-items: center; 
+      gap: 60rem;
+      padding-bottom: 4rem;
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+      padding-top:2.88rem;
+      width: 80rem;
+        height: 12rem;
+      
+      }
+      
+      .textprice {
+        margin-left:1.25rem;
+        word-spacing: -0.02rem; 
+        font-size:5rem;
+        white-space: pre-line;
+        font-family: Roboto, sans-serif;
+        text-transform: uppercase;
+        
+      }
+      
+      .buttonblock {
+        width: 30rem;
+        height: 12rem;
+        padding: 0.5rem 1rem;
+        justify-content: center;
+        align-items: center;
+        border: 0.0625rem solid #0E0A00;
+        background: none;
+        display: flex; /* Нужно, чтобы кнопка тоже была флекс-элементом */
+      }
+      
+      .buttontext {
+        color: #222;
+        font-family: Roboto;
+        font-size: 4rem;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      
+      .buttonblock:hover {
+        background-color: #EB6B32; /* Заливка при наведении */
+        border-color: #EB6B32; /* Меняем цвет рамки, чтобы соответствовал фону */
+    }
+    
+    .buttonblock:hover .buttontext {
+        color: #FFFCF6; 
+        background: none;
+    }
+    
+    
+    footer{
+        position: relative;
+        margin: 3.64rem  1.42rem 2.14rem  1.42rem;
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+    .bottom-line {
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        margin: 1.42rem 7.5rem 0 7.5rem;
+        gap: 7rem;
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+    .bottom-line ul {
+        display: contents; 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+    }
+    
+    .bottom-line li {
+        text-align: center; 
+        background-color: transparent;
+        font-size: 3rem;
+    }
+    
+    .bottom-line li:first-child {
+        margin-left: 1rem; 
+    }
+    
+    .bottom-line li:last-child {
+        margin-right: 1rem; 
+    }
+    
+    .bottom-line li a{
+        text-align: center; 
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+    }
+    
+    .bottom-line li a:hover { 
+        color: gray ; 
+        text-decoration: underline;
+    }
+    
+    .bottom-line a:visited {
+        color: inherit;
+    }
+    
+    .frame-footer {
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        position: relative;
+        background-color: transparent;
+    }
+    #frame-in-footer {
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    #logo-footer {
+        width: 46rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+    #circle1,#circle2{
+        width: 6.7rem;
+        position: absolute;
+        top:6.4%;
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+    #circle3, #circle4{
+        width: 6.7rem;
+        position: absolute;
+        bottom: 6.4%;
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+    #circle1,#circle4{
+        left:3.82%;
+    }
+    
+    #circle2, #circle3{
+        right:3.3%;
+    }
+    
+    #flame{
+        width: 100%;
+        position:absolute;
+        bottom: 0%;
+        left:0%;
+        z-index: 1;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 1000px)  and (orientation: landscape){
+        
+    .desctop-order {
+        display: none;
+    }
+        
+    header {
+        display: flex;
+        width: 100%;
+        background-color: #FFFCF6;
+    }
+    
+
+    .column-content {
+        
+        width: 100%;        
+    }
+    .column-left {
+    
+        width: 60%;
+        
+    }
+    
+    /* Текст */
+    .text1 {
+        color: #222;
+        text-align: center;
+        font-size: 4rem;
+        white-space: pre-line;
+        font-family: Roboto, sans-serif;
+        padding: 5rem;
+    }
+    
+    .image-container {
+        border-top: 0.0625rem  solid #0E0A00;  
+        padding: 3rem;
+        
+    }
+    .image-container img{
+        width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+       
+    
+    .textic{
+        word-spacing: 3rem;
+        font-size:2rem;
+        white-space: pre-line;
+        font-family: Roboto, sans-serif;
+        text-transform: uppercase;
+        /* margin-top: -1rem ; */
+        margin-left:1.25rem; 
+    }
+
+    #search{
+        padding: 3rem 1.25rem 3rem 1.25rem;
+    }
+    
+    #search-field{
+        grid-template-columns: 7fr 1fr;
+    }
+        
+    #search-input{
+        font-size: 2rem;
+        border: 0.5px solid black;
+        border-radius: 0px;
+    }
+
+    .clear-icon {
+        position: absolute;
+        right: 14%; 
+        top: 50%;
+    }
+    
+    .blocks-container {
+        display: flex; /* Располагаем блоки в ряд */
+        gap: 1.25rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem; 
+        margin-bottom: 1.25rem;
+        flex-wrap: wrap;
+      }
+    
+    .block{
+        border: 0.0625rem solid #0E0A00; 
+        flex: 0 1 calc(50% - 1.25rem);
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .textmain{
+        margin-top: 3.4rem;
+        font-size: 3rem;
+    }
+
+    .textpost{
+        margin-top: 0.5rem;
+        color: #222;
+        font-family: Roboto;
+        font-size: 2rem;
+        font-style: normal;
+        margin-left:1.25rem; 
+        letter-spacing: 0.03125rem;
+        text-transform: uppercase;
+    }
+    
+    .imageblock{
+        display: flex;
+        margin-top: 0rem; /* Отступ сверху */
+        justify-content: center;
+       
+    }
+    .imgpizza{
+        width: 100%;
+        height: auto;
+        display: block; 
+    }
+    .price-and-button-container {
+        display: inline-flex;
+      align-items: center; 
+      gap: 27rem;
+      padding-bottom: 3rem;
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+      padding-top:2.88rem;
+      width: 8rem;
+        height: 3.5rem;
+      
+      }
+      
+      .textprice {
+        margin-left:1.25rem;
+        word-spacing: -0.02rem; 
+        font-size:3rem;
+        white-space: pre-line;
+        font-family: Roboto, sans-serif;
+        text-transform: uppercase;
+        
+      }
+      
+      .buttonblock {
+        width: 13rem;
+        height: 5rem;
+        padding: 0.5rem 1rem;
+        justify-content: center;
+        align-items: center;
+        border: 0.0625rem solid #0E0A00;
+        background: none;
+        display: flex; /* Нужно, чтобы кнопка тоже была флекс-элементом */
+      }
+      
+      .buttontext {
+        color: #222;
+        font-family: Roboto;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      
+      .buttonblock:hover {
+        background-color: #EB6B32; /* Заливка при наведении */
+        border-color: #EB6B32; /* Меняем цвет рамки, чтобы соответствовал фону */
+    }
+    
+    .buttonblock:hover .buttontext {
+        color: #FFFCF6; 
+        background: none;
+    }
+}
+
+
+
+
+
+
